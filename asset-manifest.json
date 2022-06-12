@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/hw-25/static/css/main.4e42bfbc.css",
+    "main.js": "/hw-25/static/js/main.c12e892b.js",
+    "index.html": "/hw-25/index.html",
+    "main.4e42bfbc.css.map": "/hw-25/static/css/main.4e42bfbc.css.map",
+    "main.c12e892b.js.map": "/hw-25/static/js/main.c12e892b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4e42bfbc.css",
+    "static/js/main.c12e892b.js"
+  ]
+}
