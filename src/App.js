@@ -1,25 +1,22 @@
-import logo from './logo.svg';
+
+import { useSelector } from 'react-redux';
 import './App.css';
 
+import ButComp from './components/ButComp';
+import Form from './components/Form';
+
 function App() {
+  const isvalid = useSelector(state=> state.ui.isValid)
+  const spiner = useSelector(state=>state.ui.isSpiner)
+  console.log(spiner);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     
+      {isvalid && <ButComp/>}
+      {!isvalid && <Form/>}
+      {!spiner && <div className="lds-circle"><div></div></div>}
     </div>
   );
 }
-
-export default App;
+export default App
